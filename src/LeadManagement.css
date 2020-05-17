@@ -1,0 +1,83 @@
+.LeadManagement {
+  text-align: center;
+}
+
+.LeadManagement-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .LeadManagement-logo {
+    animation: LeadManagement-logo-spin infinite 20s linear;
+  }
+}
+
+.LeadManagement-header {
+  background-color: #282c34;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.LeadManagement-link {
+  color: #61dafb;
+}
+
+@keyframes LeadManagement-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+div.leadCard {    
+  text-align: left;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+:root {
+  --avatar-size: 4rem;
+  /* change this value anything, e.g., 100px, 10rem, etc. */
+}
+div.avatar {
+  background-color: #ccc;
+  border-radius: 50%;
+  height: var(--avatar-size);
+  text-align: center;
+  width: var(--avatar-size);
+}
+span.initial {
+  font-size: calc(var(--avatar-size) / 2); /* 50% of parent */
+  line-height: 1;
+  position: relative;
+  top: calc(var(--avatar-size) / 4); /* 25% of parent */
+}
+div.cardHeader {
+  display: flex;
+}
+span.cardHeaderInfo {
+  margin-top: auto;
+  padding-left: 10px;
+}
+img.smallIcon {
+  width: 30px;
+  margin-right: 5px;
+}
+.react-tabs__tab {
+  min-width: 20%;
+}
